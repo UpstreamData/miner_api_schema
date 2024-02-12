@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "miner-api-schema"
+version = "0.1.0"
+description = ""
+authors = ["UpstreamData <brett@upstreamdata.ca>"]
+readme = "README.md"
+packages = [{include = "miner_api_schema"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^2.6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
