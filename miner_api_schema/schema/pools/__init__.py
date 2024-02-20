@@ -1,7 +1,8 @@
 from __future__ import annotations
+
 from pydantic import BaseModel
 
-from miner_api_schema.base import BaseResponse
+from miner_api_schema.schema.base import BaseResponse
 
 
 class PoolWorkInfo(BaseModel):

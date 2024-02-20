@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-from miner_api_schema.base import BaseResponse
+from miner_api_schema.schema.base import BaseResponse
 
 
 class MultiResponse(BaseModel):

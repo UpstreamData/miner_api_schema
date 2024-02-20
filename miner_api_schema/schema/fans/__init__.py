@@ -1,7 +1,8 @@
 from __future__ import annotations
+
 from pydantic import BaseModel
 
-from miner_api_schema.base import BaseResponse
+from miner_api_schema.schema.base import BaseResponse
 
 
 class FanData(BaseModel):
@@ -25,9 +26,9 @@ class AdvancedFanData(FanData):
     :param: pid_mode: The PID mode being used.  Defaults to 0.
     """
 
-    max_speed_set: int
-    min_speed_set: int
-    pid_mode: int
+    max_speed_set: int = 100
+    min_speed_set: int = 0
+    pid_mode: int = 0
 
 
 class FansResult(BaseModel):
